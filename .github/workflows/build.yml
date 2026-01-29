@@ -37,4 +37,16 @@ jobs:
         uses: super-linter/super-linter@12562e48d7059cf666c43a4ecb0d3b5a2b31bd9e # x-release-please-version
         env:
           VALIDATE_RUST: true
+          FIX_RUST: true
+          FIX_MARKDOWN: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit formatting changes
+        run: |
+          if [[ -n $(git status -s) ]]; then
+            git config user.email "action@github.com"
+            git config user.name "GitHub Action"
+            git add -A
+            git commit -m "chore: auto-format code with super-linter"
+            git push
+          fi
