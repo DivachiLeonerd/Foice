@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Super-linter
-        uses: super-linter/super-linter@vaa07c3db21cbc4e6f3aed3888ce18b6ba035fdb3 # x-release-please-version
+        uses: super-linter/super-linter@12562e48d7059cf666c43a4ecb0d3b5a2b31bd9e # x-release-please-version
         env:
           VALIDATE_RUST: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
