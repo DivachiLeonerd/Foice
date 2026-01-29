@@ -36,5 +36,5 @@ jobs:
       - name: Super-linter
         uses: super-linter/super-linter@v8.4.0 # x-release-please-version
         env:
-          # To report GitHub Actions status checks
+          VALIDATE_RUST: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
