@@ -45,7 +45,7 @@ jobs:
         run: |
           if [[ -n $(git status -s) ]]; then
             git config user.email "afonsoteresofernandes@gmail.com"
-            git config user.name "Divachileonerd"
+            git config user.name "DivachiLeonerd"
             git add -A
             git commit -m "chore: auto-format code with super-linter"
             git push
