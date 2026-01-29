@@ -44,8 +44,8 @@ jobs:
       - name: Commit formatting changes
         run: |
           if [[ -n $(git status -s) ]]; then
-            git config user.email "action@github.com"
-            git config user.name "GitHub Action"
+            git config user.email "afonsoteresofernandes@gmail.com"
+            git config user.name "Divachileonerd"
             git add -A
             git commit -m "chore: auto-format code with super-linter"
             git push
