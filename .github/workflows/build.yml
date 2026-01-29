@@ -26,7 +26,7 @@ jobs:
 
     steps:
       - name: Checkout code
-        uses: actions/checkout@v5
+        uses: actions/checkout@8e8c483db84b4bee98b60c0593521ed34d9990e8
         with:
           # super-linter needs the full git history to get the
           # list of files that changed across commits
@@ -34,7 +34,7 @@ jobs:
           persist-credentials: false
 
       - name: Super-linter
-        uses: super-linter/super-linter@v8.4.0 # x-release-please-version
+        uses: super-linter/super-linter@vaa07c3db21cbc4e6f3aed3888ce18b6ba035fdb3 # x-release-please-version
         env:
           VALIDATE_RUST: true
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
