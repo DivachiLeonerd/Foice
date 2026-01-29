@@ -1,3 +1,4 @@
-function Hello()
-{print("Hello World");
+fn main()
+{
+    println!("Hello, world!");
 }
