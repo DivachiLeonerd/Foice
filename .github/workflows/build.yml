@@ -20,7 +20,7 @@ jobs:
 
       - name: Super-Linter
         uses: super-linter/super-linter@v7.1.0
-        run:
+        run: |
           echo Hello!
 
       # Runs a set of commands using the runners shell
